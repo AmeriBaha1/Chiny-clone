@@ -1,76 +1,92 @@
-<html>
-    <head>
-        <meta charset="UTF-8">
-		<title>Mon code amélioré</title> 
-    </head>
-    <body>
-        <img src="arr_bannp.png" width="100%" title="Mon premier exercice">
-		<div align="center">
-			<a href="accueil.html">Accueil</a></li> |
-			<a href="presentation.html">Présentation</a></li> |
-			<a href="activite.html">Activités</a></li> |
-			<a href="contact.html">Contact</a></li> |
-		</div>
-    <h1><font face="verdana" color="#003569">Exemple de formulaire d'inscription</font></h1>
-    <form name="inscription" method="POST" action="">
-        Civilité<br>
-        <input type="radio" name="civilité">Mlle<br>
-        <input type="radio" name="civilité">Mme<br>
-        <input type="radio" name="civilité">M.<br>
-        Nom et Prénom<br>
-        <input type="text" name="nom" value=""><br>
-        Email<br>
-        <input type="text" name="Email" value=""><br>
-        Mot de Passe<br>
-        <input type="password" name="pass" value=""><br>
-        Vous être<br>
-        <select name="niv">
-            <option>Etudiant</option>
-            <option>Fonctionnaire</option>
-            <option>Employé au secteur privé</option>
-        </select><br>
-        <input type="button" name="envoyer" value="S'inscrire">
-    </form>
-    <br>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My first exercise</title>
+    <link rel="stylesheet" href="css/presentation.css">
+</head>
+<body>
+    <header>
+        <img class="logo-image" src="img/arr_bannp.png" alt="Logo" title="Chiny Logo">
+    </header>
+    <nav class="navbar">
+        <a href="home.html">Home</a> |
+        <a href="presentation.html">Presentation</a> |
+        <a href="activite.html">Activities</a> |
+        <a href="#">Contact</a>
+    </nav>
+    <hr>
+    <div class="container formcontainer">
+        <h1>Sample registration form</h1>
+        <form name="inscription" method="POST" action="">
+            <label>
+                Civility: <br><br>
+                <input class="civility" type="radio" name="civility">  Ms<br>
+                <input class="civility" type="radio" name="civility">  Mrs<br>
+                <input class="civility" type="radio" name="civility">  Mr.<br>
+            </label>
+            <br>
+            <label class="name">
+                Full name:
+                <input type="text" name="name" placeholder="full name" value="">
+            </label>
+            <br>
+            <br>
+            <label class="email">
+                Email:
+                <input type="text" name="Email" placeholder="email" value="">
+            </label>
+            <br>
+            <br>
+            <label class="password">
+                Password:
+                <input type="password" name="pass" placeholder="password" value="">
+            </label>
+            <br>
+            <br>
+            <label class="profession">
+                You are:
+                <select name="niv">
+                    <option>Student</option>
+                    <option>Official</option>
+                    <option>Private sector employee</option>
+                </select>
+            </label>
+            <br>
+            <br>
+            <input class="submit" type="button" name="send" value="Register">
+        </form>
+    </div>
+    <hr>
     <footer>
-        <center>
-            <div id="sfooter">
-                <div id="footerlogo">
-                    <a href="http://www.chiny.me" title="Apprendre à créer des sites web" > 
-                        <img src="footerlogo.png">
-                    </a>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="img/footerlogo.png" alt="Chiny logo">
+            </div>
+            <div class="footer-menu">
+                <div>
+                    <img src="img/icons/icon_home_bas.png" alt="home icon">
+                    <a href="home.html">Home</a>
                 </div>
-                <div id="footermenu">
-                    <div>
-                        <img src="icon_home_bas.png" class="iconmenubas" alt="chiny.me">
-                        <a href="http://www.chiny.me">Chiny.me</a>
-                    </div>
-                    <div>
-                        <img src="icon_auteur_bas.png" class="iconmenubas" alt="Auteur: Mohamed CHINY"/>
-                        <a href="auteur.php">A propos de l'auteur
-                        </a>
-                    </div>
-                    <div>
-                        <img src="icon_cours_bas.png" class="iconmenubas" alt="Cours de programmation et développement web"/>
-                        <a href="auteur.php">Cours
-                        </a>
-                    </div>
-                    <div>
-                        <img src="icon_glossaire_bas.png" class="iconmenubas" alt="Glossaire et développement web"/>
-                        <a href="glossaire.php">Glossaire du web
-                        </a>
-                    </div>
-                    <div>
-                        <img src="icon_videos_bas.png" class="iconmenubas" alt="vidéos de tutoriels de HTML, CSS,Javascript et PHP"/>
-                        <a href="http://www.youtube.com/mohamedchiny">vidéos
-                        </a>
-                    </div>
+                <div>
+                    <img src="img/icons/icon_auteur_bas.png" alt="aboutme icon">
+                    <a href="https://www.chiny.me/auteur.php" target="_blank">About the Author</a>
+                </div>
+                <div>
+                    <img src="img/icons/icon_cours_bas.png" alt="courses icon">
+                    <a href="https://www.chiny.me/cours.php" target="_blank">Courses</a>
+                </div>
+                <div>
+                    <img src="img/icons/icon_glossaire_bas.png" alt="glossary icon">
+                    <a href="https://www.chiny.me/glossaire.php" target="_blank">Web Glossary</a>
+                </div>
+                <div>
+                    <img src="img/icons/icon_videos_bas.png" alt="videos icon">
+                    <a href="https://www.youtube.com/mohamedchiny" target="_blank">Videos</a>
                 </div>
             </div>
-            <div id="copy">
-                <a href="http://www.chiny.me" title="tutoriels de développement web" class="menubas">Chiny</a> &copy; 2015-2021
-            </div>
-        </center>
+        </div>
+        <div class="copyright"><span>Chiny &copy; 2015-2022</span></div>
     </footer>
-    </body>
+</body>
 </html>

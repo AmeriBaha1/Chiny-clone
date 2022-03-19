@@ -26,6 +26,11 @@ hr {
     height: 40vh;
 }
 
+.formcontainer {
+    margin: 2rem;
+    height: 60vh;
+}
+
 .container h1 {
     margin: 2rem;
     color: #003569;
@@ -70,6 +75,26 @@ hr {
     text-align: center;
     padding: 0.7rem 0 0.7rem 0;
     border-top: #9a9a9a solid 1px;
+}
+
+.container form {
+    margin: 2rem;
+}
+
+input {
+    margin-left: 2rem;
+}
+
+label {
+    margin: 1rem;
+}
+
+.civility {
+    margin-left: 2rem;
+}
+
+.submit {
+    margin-left: 1rem;
 }
 
 
