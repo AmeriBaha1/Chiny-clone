@@ -20,14 +20,13 @@
     background-color: #EEEEEE;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 }
 
-<<<<<<< HEAD
+.navbar ul {
+    margin-top: 2rem;
+}
 
-
-=======
->>>>>>> main
 .navbar li {
     margin-bottom: 3rem;
 }
